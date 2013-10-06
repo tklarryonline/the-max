@@ -1,3 +1,21 @@
-name: The MAX
 markdown: redcarpet
 pygments: true
+
+# Serve command options
+
+# Personal
+name: The MAX
+
+links:
+  - name: Us
+    url: /us/
+    desc: who we are
+  - name: Works
+    url: /works/
+    desc: things we made
+  - name: Team
+    url: /team/
+    desc: people we have
+  - name: Contact
+    url: /contact/
+    desc:
