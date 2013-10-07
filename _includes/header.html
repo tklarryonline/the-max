@@ -1,8 +1,7 @@
 <nav class="navbar navbar-default nav_bar" role="navigation">
     <div class="navbar-header">
         <a href="{{ site.baseurl }}" class="navbar-brand">
-            <!-- <span class="logo"></span> -->
-            The MAX
+            <img src="{{ site.logo }}" alt="The MAX" class="logo">
         </a>
     </div>
 
@@ -11,10 +10,15 @@
             {% for link in site.links %}
                 <li>
                     <a href="{{ link.url }}">
-                        {{ link.name }}
+                        <span class="main_item" style="color: #{{ link.color }}">
+                            x({{ link.name | upcase }})
+                        </span>
+                        <br>
+                        <span class="desc_item">{{ link.desc }}</span>
                     </a>
                 </li>
             {% endfor %}
         </ul>
     </div>
+    {% include home/svg_dotted.html %}
 </nav>

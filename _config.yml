@@ -5,20 +5,26 @@ pygments: true
 
 # Personal
 name: The MAX
+logo: /images/the-max-logo.png
 
 links:
   - name: Us
     url: /us/
     desc: who we are
+    color: ee4023
   - name: Services
     url: /services/
     desc: what we offer
+    color: f48245
   - name: Works
     url: /works/
     desc: what we've done
+    color: 50b748
   - name: Clients
     url: /clients/
-    desc: people we have
+    desc:
+    color:
   - name: Contact
     url: /contact/
     desc:
+    color: 00b8f1
