@@ -1,4 +1,4 @@
-<nav class="navbar navbar-default" role="navigation">
+<nav class="navbar navbar-default nav_bar" role="navigation">
     <div class="navbar-header">
         <a href="{{ site.baseurl }}" class="navbar-brand">
             <!-- <span class="logo"></span> -->
@@ -9,7 +9,11 @@
     <div class="collapse navbar-collapse">
         <ul class="nav navbar-nav navbar-right">
             {% for link in site.links %}
-                <li><a href="{{ link.url }}">{{ link.name }}</a></li>
+                <li>
+                    <a href="{{ link.url }}">
+                        {{ link.name }}
+                    </a>
+                </li>
             {% endfor %}
         </ul>
     </div>
