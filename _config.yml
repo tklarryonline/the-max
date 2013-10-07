@@ -5,7 +5,8 @@ pygments: true
 
 # Personal
 name: The MAX
-logo: /images/the-max-logo.png
+logo: images/the-max-logo.png
+baseurl: /the-max
 
 links:
   - name: Us
