@@ -106,7 +106,18 @@ title: The MAX
         </span>
         <br>
     </div>
-    <div class="col-md-9 row"></div>
+    <div class="col-md-9">
+        <div class="row">
+        {% for client in site.clients %}
+            <div class="col-md-3">
+                <img src="{{ site.baseurl }}{{ site.client_img_url }}/{{ client.img }}"
+                        alt="{{ client.name }}"
+                        class="img-responsive img-thumbnail" />
+            </div>
+            {% cycle '', '', '', '</div><div class="row">' %}
+        {% endfor %}
+        </div>
+    </div>
 </div>
 {% include home/hr_to_top.html %}
 <!-- Contact -->

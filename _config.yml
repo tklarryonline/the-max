@@ -7,25 +7,46 @@ pygments: true
 name: The MAX
 logo: images/the-max-logo.png
 baseurl: /the-max
+img_url: /images
+client_img_url: /images/clients
 
 links:
   - name: Us
     url: /us/
     desc: who we are
-    color: ee4023
   - name: Services
     url: /services/
     desc: what we offer
-    color: f48245
   - name: Works
     url: /works/
     desc: what we've done
-    color: 50b748
   - name: Clients
     url: /clients/
     desc:
-    color:
   - name: Contact
     url: /contact/
     desc:
-    color: 00b8f1
+
+colors:
+  - 00baf2
+  - f58345
+  - 4db848
+  - ef4023
+  - 00baf2
+
+clients:
+  - name: Yamaha Vietnam
+    img: yamaha.png
+  - name: DAF
+    img: daf.png
+  - name: Levi's
+    img: levi.png
+  - name: Piaggio Vietnam
+    img: piaggio.png
+  - name: VNPT
+    img: vnpt.png
+  - name: Abbot
+    img: abbot.png
+  - name: Vidamo
+    img: vidamo.png
+

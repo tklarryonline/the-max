@@ -10,7 +10,7 @@
             {% for link in site.links %}
                 <li>
                     <a href="{{ link.url }}">
-                        <span class="main_item" style="color: #{{ link.color }}">
+                        <span class="main_item" style="color: #{{ site.colors[forloop.index0] }}">
                             x({{ link.name | upcase }})
                         </span>
                         <br>
