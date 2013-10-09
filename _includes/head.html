@@ -11,3 +11,12 @@
 
 <!-- Custom CSS -->
 <link rel="stylesheet" href="{{ site.baseurl}}/css/main.css">
+
+<!-- CSS that have to be flexible using Liquid -->
+<style type="text/css">
+{% for link in site.links %}
+.{{ link.name | downcase }}_part .part_title {
+  color: #{{ site.colors[forloop.index0] }};
+}
+{% endfor %}
+</style>

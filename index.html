@@ -25,8 +25,15 @@ title: The MAX
         </div>
         {% include home/svg_dotted.html %}
         <div class="engage_customer">
-            Join us on:
-            <!-- @TODO add facebook and twitter here -->
+            <p>Join us on:</p>
+            <p>
+                <a href="http://www.facebook.com">
+                    <img src="{{ site.baseurl }}{{ site.img_url }}/facebook.png" alt="">
+                </a>
+                <a href="https://plus.google.com/102098580728849339715">
+                    <img src="{{ site.baseurl }}{{ site.img_url }}/google+.png" alt="">
+                </a>
+            </p>
         </div>
     </div>
     <div class="col-md-9">
@@ -37,11 +44,11 @@ title: The MAX
 <!-- US - who we are -->
 <div id="us" class="row part us_part">
     <div class="col-md-3">
-        <span class="part_title" style="color: #ee4023">
-            x (US)
+        <span class="part_title">
+            <img src="{{ site.baseurl }}{{ site.img_url}}/x0.png" alt="x">(US)
         </span>
         <br>
-        <span>who we are</span>
+        <span class="part_subtitle">who we are</span>
     </div>
     <div class="col-md-9 row">
         <div class="col-md-6">
@@ -61,13 +68,13 @@ title: The MAX
 </div>
 {% include home/hr_to_top.html %}
 <!-- Services - what we offer -->
-<div id="services" class="row part service_part">
+<div id="services" class="row part services_part">
     <div class="col-md-3">
-        <span class="part_title" style="color: #f48245">
-            x (SERVICES)
+        <span class="part_title">
+            <img src="{{ site.baseurl }}{{ site.img_url}}/x1.png" alt="x">(SERVICES)
         </span>
         <br>
-        what we offer
+        <span class="part_subtitle">what we offer</span>
     </div>
     <div class="col-md-9 row">
         <ul class="no-dot">
@@ -83,11 +90,11 @@ title: The MAX
 <!-- Works - what we've done -->
 <div id="works" class="row part works_part">
     <div class="col-md-3">
-        <span class="part_title" style="color: #50b748">
-            x (WORK)
+        <span class="part_title">
+            <img src="{{ site.baseurl }}{{ site.img_url}}/x2.png" alt="x">(WORK)
         </span>
         <br>
-        what we've done
+        <span class="part_subtitle">what we've done</span>
     </div>
     <div class="col-md-9 row">
         <ul class="no-dot">
@@ -103,8 +110,8 @@ title: The MAX
 <!-- Clients -->
 <div id="clients" class="row part clients_part">
     <div class="col-md-3">
-        <span class="part_title" style="color: #f48245">
-            x (CLIENTS)
+        <span class="part_title">
+            <img src="{{ site.baseurl }}{{ site.img_url}}/x3.png" alt="x">(CLIENTS)
         </span>
         <br>
     </div>
@@ -114,7 +121,7 @@ title: The MAX
             <div class="col-md-3 img-thumbnail client_img_div">
                 <img src="{{ site.baseurl }}{{ site.client_img_url }}/{{ client.img }}"
                         alt="{{ client.name }}"
-                        class="img-responsive client_img" />
+                        class="img-responsive client_img {{ client.img | replace: '.png', '' }}_img" />
             </div>
             {% cycle '', '', '', '</div><div class="row">' %}
         {% endfor %}
@@ -125,8 +132,8 @@ title: The MAX
 <!-- Contact -->
 <div id="contact" class="row part contact_part">
     <div class="col-md-3">
-        <span class="part_title" style="color: #00b8f1">
-            x (CONTACT)
+        <span class="part_title">
+            <img src="{{ site.baseurl }}{{ site.img_url}}/x4.png" alt="x">(CONTACT)
         </span>
         <br>
     </div>
@@ -147,12 +154,15 @@ title: The MAX
         </div>
         <div class="col-md-3">
             <strong>Find us</strong>
-            <p>Please download PDF map.</p>
-            <p>Or find us on Google: <a href="http://goo.gl/maps/abRfR">oo.gl/maps/abRfR</a></p>
+            <!-- <p>Please download PDF map.</p> -->
+            <p>Find us on Google Maps: <a href="http://goo.gl/maps/abRfR">goo.gl/maps/abRfR</a></p>
         </div>
         <div class="col-md-4">
             <strong>Recruitement</strong>
-            <p>We are always on the look out for exceptional individuals. If you are talented, dedicated and want to work for a progressive organisation, email your CV and work to <a href="info@themax.com.vn">info@themax.com.vn</a></p>
+            <p>We are always on the look out for exceptional individuals.</p>
+            <p>
+                If you are talented, dedicated and want to work for a progressive organisation, email your CV and work to <a href="info@themax.com.vn">info@themax.com.vn</a>
+            </p>
         </div>
     </div>
 </div>

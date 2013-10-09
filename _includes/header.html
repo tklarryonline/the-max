@@ -9,9 +9,10 @@
         <ul class="nav navbar-nav navbar-right">
             {% for link in site.links %}
                 <li>
-                    <a href="#{{ link.url }}" class="{{ link.name | downcase }}_menu_item">
+                    <a href="#{{ link.url }}" class="{{ link.name | downcase }}_menu_item menu_item">
                         <span class="main_item">
-                            x ({{ link.name | upcase }})
+                            <img src="{{ site.baseurl }}{{ site.img_url}}/x{{ forloop.index0 }}.png"
+                                    alt="x">({{ link.name | upcase }})
                         </span>
                         <br>
                         <span class="desc_item">{{ link.desc }}</span>

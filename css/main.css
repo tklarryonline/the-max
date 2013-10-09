@@ -24,11 +24,11 @@
   margin: 0;
   padding: 0;
   font-family: Euromode;
-
-  -webkit-transition: border-color 0.25s ease-out;
-  -moz-transition:    border-color 0.25s ease-out;
-  -o-transition:      border-color 0.25s ease-out;
-  transition:         border-color 0.25s ease-out;
+  -webkit-transition: border 0.25s ease-out, color 0.25s ease-out;
+  -moz-transition: border 0.25s ease-out, color 0.25s ease-out;
+  -o-transition: border 0.25s ease-out, color 0.25s ease-out;
+  -ms-transition: border 0.25s ease-out, color 0.25s ease-out;
+  transition: border 0.25s ease-out, color 0.25s ease-out;
 }
 
 html, body {
@@ -46,13 +46,7 @@ body {
 h1 { margin-bottom: 1em; }
 p { margin: 0 0 1em; }
 
-a         { color: #00a; }
-a:hover   { color: #000; }
-a:visited { color: #a0a; }
-
-ul.no-dot {
-  list-style: none;
-}
+ul.no-dot { list-style: none; }
 
 /*****************************************************************************/
 /* Specifically designed components
@@ -94,6 +88,18 @@ svg.dotted_hr {
 
 span.main_item {
   letter-spacing: 1px;
+}
+
+span.main_item img {
+  width: 15px;
+}
+
+.menu_item {
+  -webkit-transition: border-color 0.3s ease;
+  -moz-transition: border-color 0.3s ease;
+  -o-transition: border-color 0.3s ease;
+  -ms-transition: border-color 0.3s ease;
+  transition: border-color 0.3s ease;
 }
 
 .us_menu_item span.main_item {
@@ -159,14 +165,6 @@ footer {
   margin-bottom: -5px;
 }
 
-.contact_item {
-  color: #ee4023;
-}
-
-.part .part_title {
-  font-size: 200%;
-}
-
 .motto_img {
   text-align: right;
   margin-bottom: 15px;
@@ -180,6 +178,25 @@ footer {
 /*****************************************************************************/
 /* Parts
 /*****************************************************************************/
+.contact_item {
+  color: #ee4023;
+}
+
+.part .part_title {
+  font-size: 160%;
+  letter-spacing: 2px;
+}
+
+.part .part_title img {
+  width: 25px;
+}
+
+.part .part_subtitle {
+  font-size: 110%;
+  font-style: italic;
+  color: #adadad;
+}
+
 .starting_part {
   font-size: 90%;
 }
@@ -191,6 +208,13 @@ footer {
 .starting_part .description .title {
   text-transform: uppercase;
   color: #5859;
+}
+
+.engage_customer a:hover {
+  text-decoration: none;
+}
+.engage_customer img {
+  width: 40px;
 }
 
 .us_part {
@@ -213,6 +237,13 @@ footer {
   left: 0;
   right: 0;
   width: 90%;
+}
+
+.clients_part .levi_img {
+  width: 135px;
+}
+.clients_part .vnpt_img {
+  width: 125px;
 }
 
 .contact_part .content p{
