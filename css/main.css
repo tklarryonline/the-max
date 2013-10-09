@@ -5,9 +5,30 @@
 /*****************************************************************************/
 
 /* Global Reset */
+@font-face {
+  font-family: Euromode;
+  src: url('../fonts/vn-euromode.ttf') format('truetype');
+}
+@font-face {
+  font-family: Euromode;
+  src: url('../fonts/vn-euromode-bold.ttf') format('truetype');
+  font-weight: bold;
+}
+@font-face {
+  font-family: Euromode;
+  src: url('../fonts/vn-euromode-italic.ttf') format('truetype');
+  font-style: italic;
+}
+
 * {
   margin: 0;
   padding: 0;
+  font-family: Euromode;
+
+  -webkit-transition: border-color 0.25s ease-out;
+  -moz-transition:    border-color 0.25s ease-out;
+  -o-transition:      border-color 0.25s ease-out;
+  transition:         border-color 0.25s ease-out;
 }
 
 html, body {
@@ -17,7 +38,7 @@ html, body {
 
 body {
   background-color: #FFF;
-  font: Helvetica, Arial, sans-serif;
+  font-family: Euromode;
   font-size: 100%;
   color: #58595B;
 }
@@ -28,6 +49,10 @@ p { margin: 0 0 1em; }
 a         { color: #00a; }
 a:hover   { color: #000; }
 a:visited { color: #a0a; }
+
+ul.no-dot {
+  list-style: none;
+}
 
 /*****************************************************************************/
 /* Specifically designed components
@@ -60,14 +85,60 @@ svg.dotted_hr {
   text-align: right;
 }
 
-.nav_bar .navbar-nav li a .main_item {
-
-}
-
 .nav_bar .navbar-nav li a .desc_item {
   font-style: italic;
   color: #adadad;
   padding-right: 5px;
+  font-size: 85%;
+}
+
+span.main_item {
+  letter-spacing: 1px;
+}
+
+.us_menu_item span.main_item {
+  color: #00baf2;
+}
+
+.us_menu_item:hover, .us_menu_item:active {
+  border-top: 3px solid #00baf2;
+  padding-top: 12px;
+}
+
+.services_menu_item span.main_item {
+  color: #f58345;
+}
+
+.services_menu_item:hover, .services_menu_item:active {
+  border-top: 3px solid #f58345;
+  padding-top: 12px;
+}
+
+.works_menu_item span.main_item {
+  color: #4db848;
+}
+
+.works_menu_item:hover, .works_menu_item:active {
+  border-top: 3px solid #4db848;
+  padding-top: 12px;
+}
+
+.clients_menu_item span.main_item {
+  color: #ef4023;
+}
+
+.clients_menu_item:hover, .clients_menu_item:active {
+  border-top: 3px solid #ef4023;
+  padding-top: 12px;
+}
+
+.contact_menu_item span.main_item {
+  color: #00baf2;
+}
+
+.contact_menu_item:hover, .contact_menu_item:active {
+  border-top: 3px solid #00baf2;
+  padding-top: 12px;
 }
 
 /*****************************************************************************/
@@ -124,4 +195,26 @@ footer {
 
 .us_part {
 
+}
+
+.clients_part .client_img_div {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  margin: 0 10px 10px 0;
+}
+
+.clients_part .client_img {
+  position: absolute;
+  overflow: auto;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 90%;
+}
+
+.contact_part .content p{
+  font-size: 90%;
 }

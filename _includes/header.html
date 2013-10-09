@@ -9,9 +9,9 @@
         <ul class="nav navbar-nav navbar-right">
             {% for link in site.links %}
                 <li>
-                    <a href="{{ link.url }}">
-                        <span class="main_item" style="color: #{{ site.colors[forloop.index0] }}">
-                            x({{ link.name | upcase }})
+                    <a href="#{{ link.url }}" class="{{ link.name | downcase }}_menu_item">
+                        <span class="main_item">
+                            x ({{ link.name | upcase }})
                         </span>
                         <br>
                         <span class="desc_item">{{ link.desc }}</span>

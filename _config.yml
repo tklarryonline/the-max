@@ -12,19 +12,19 @@ client_img_url: /images/clients
 
 links:
   - name: Us
-    url: /us/
+    url: us
     desc: who we are
   - name: Services
-    url: /services/
+    url: services
     desc: what we offer
   - name: Works
-    url: /works/
+    url: works
     desc: what we've done
   - name: Clients
-    url: /clients/
+    url: clients
     desc:
   - name: Contact
-    url: /contact/
+    url: contact
     desc:
 
 colors:
@@ -45,8 +45,8 @@ clients:
     img: piaggio.png
   - name: VNPT
     img: vnpt.png
-  - name: Abbot
-    img: abbot.png
+  - name: Abbott
+    img: abbott.png
   - name: Vidamo
     img: vidamo.png
 

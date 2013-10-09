@@ -29,11 +29,13 @@ title: The MAX
             <!-- @TODO add facebook and twitter here -->
         </div>
     </div>
-    <div class="col-md-9"></div>
+    <div class="col-md-9">
+        <img src="{{ site.baseurl }}{{ site.img_url }}/Typographic.jpg" class="img-responsive">
+    </div>
 </div>
 {% include home/hr_to_top.html %}
 <!-- US - who we are -->
-<div class="row part us_part">
+<div id="us" class="row part us_part">
     <div class="col-md-3">
         <span class="part_title" style="color: #ee4023">
             x (US)
@@ -59,7 +61,7 @@ title: The MAX
 </div>
 {% include home/hr_to_top.html %}
 <!-- Services - what we offer -->
-<div class="row part service_part">
+<div id="services" class="row part service_part">
     <div class="col-md-3">
         <span class="part_title" style="color: #f48245">
             x (SERVICES)
@@ -68,7 +70,7 @@ title: The MAX
         what we offer
     </div>
     <div class="col-md-9 row">
-        <ul>
+        <ul class="no-dot">
             <li>360<sup>o</sup> approach to branding</li>
             <li>Digital marketing solutions</li>
             <li>Event management</li>
@@ -79,7 +81,7 @@ title: The MAX
 </div>
 {% include home/hr_to_top.html %}
 <!-- Works - what we've done -->
-<div class="row part works_part">
+<div id="works" class="row part works_part">
     <div class="col-md-3">
         <span class="part_title" style="color: #50b748">
             x (WORK)
@@ -88,7 +90,7 @@ title: The MAX
         what we've done
     </div>
     <div class="col-md-9 row">
-        <ul>
+        <ul class="no-dot">
             <li>Branding</li>
             <li>Digital campaign</li>
             <li>Event management</li>
@@ -99,7 +101,7 @@ title: The MAX
 </div>
 {% include home/hr_to_top.html %}
 <!-- Clients -->
-<div class="row part clients_part">
+<div id="clients" class="row part clients_part">
     <div class="col-md-3">
         <span class="part_title" style="color: #f48245">
             x (CLIENTS)
@@ -109,10 +111,10 @@ title: The MAX
     <div class="col-md-9">
         <div class="row">
         {% for client in site.clients %}
-            <div class="col-md-3">
+            <div class="col-md-3 img-thumbnail client_img_div">
                 <img src="{{ site.baseurl }}{{ site.client_img_url }}/{{ client.img }}"
                         alt="{{ client.name }}"
-                        class="img-responsive img-thumbnail" />
+                        class="img-responsive client_img" />
             </div>
             {% cycle '', '', '', '</div><div class="row">' %}
         {% endfor %}
@@ -121,13 +123,37 @@ title: The MAX
 </div>
 {% include home/hr_to_top.html %}
 <!-- Contact -->
-<div class="row part contact_part">
+<div id="contact" class="row part contact_part">
     <div class="col-md-3">
         <span class="part_title" style="color: #00b8f1">
             x (CONTACT)
         </span>
         <br>
     </div>
-    <div class="col-md-9 row"></div>
+    <div class="col-md-9 row content">
+        <div class="col-md-5">
+            <strong>Email</strong>
+            <p>
+                For general enquiries please email: <br>
+                <a href="mailto:info@themax.com.vn">info@themax.com.vn</a>
+            </p>
+            <p>
+                For new business enquiries please email: <br>
+                <a href="mailto:sales@themax.com.vn">sales@themax.com.vn</a>
+            </p>
+            <strong>Call us:</strong>
+            <p>Tel: +84 (8) 3845 2184 / +84 9044 15051</p>
+            <p>145/1A Nguyen Dinh Chinh, Ward 11,<br>Phu Nhuan Dist., HCMC</p>
+        </div>
+        <div class="col-md-3">
+            <strong>Find us</strong>
+            <p>Please download PDF map.</p>
+            <p>Or find us on Google: <a href="http://goo.gl/maps/abRfR">oo.gl/maps/abRfR</a></p>
+        </div>
+        <div class="col-md-4">
+            <strong>Recruitement</strong>
+            <p>We are always on the look out for exceptional individuals. If you are talented, dedicated and want to work for a progressive organisation, email your CV and work to <a href="info@themax.com.vn">info@themax.com.vn</a></p>
+        </div>
+    </div>
 </div>
 {% include home/hr_to_top.html %}
