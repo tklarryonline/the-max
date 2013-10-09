@@ -15,6 +15,31 @@
 <!-- Custom CSS -->
 <link rel="stylesheet" href="/the-max/css/main.css">
 
+<!-- CSS that have to be flexible using Liquid -->
+<style type="text/css">
+
+.us_part .part_title {
+  color: #00baf2;
+}
+
+.services_part .part_title {
+  color: #f58345;
+}
+
+.works_part .part_title {
+  color: #4db848;
+}
+
+.clients_part .part_title {
+  color: #ef4023;
+}
+
+.contact_part .part_title {
+  color: #00baf2;
+}
+
+</style>
+
 </head>
 
 <body>
@@ -30,9 +55,10 @@
         <ul class="nav navbar-nav navbar-right">
             
                 <li>
-                    <a href="#us" class="us_menu_item">
+                    <a href="#us" class="us_menu_item menu_item">
                         <span class="main_item">
-                            x (US)
+                            <img src="/the-max/images/x0.png"
+                                    alt="x">(US)
                         </span>
                         <br>
                         <span class="desc_item">who we are</span>
@@ -40,9 +66,10 @@
                 </li>
             
                 <li>
-                    <a href="#services" class="services_menu_item">
+                    <a href="#services" class="services_menu_item menu_item">
                         <span class="main_item">
-                            x (SERVICES)
+                            <img src="/the-max/images/x1.png"
+                                    alt="x">(SERVICES)
                         </span>
                         <br>
                         <span class="desc_item">what we offer</span>
@@ -50,9 +77,10 @@
                 </li>
             
                 <li>
-                    <a href="#works" class="works_menu_item">
+                    <a href="#works" class="works_menu_item menu_item">
                         <span class="main_item">
-                            x (WORKS)
+                            <img src="/the-max/images/x2.png"
+                                    alt="x">(WORKS)
                         </span>
                         <br>
                         <span class="desc_item">what we've done</span>
@@ -60,9 +88,10 @@
                 </li>
             
                 <li>
-                    <a href="#clients" class="clients_menu_item">
+                    <a href="#clients" class="clients_menu_item menu_item">
                         <span class="main_item">
-                            x (CLIENTS)
+                            <img src="/the-max/images/x3.png"
+                                    alt="x">(CLIENTS)
                         </span>
                         <br>
                         <span class="desc_item"></span>
@@ -70,9 +99,10 @@
                 </li>
             
                 <li>
-                    <a href="#contact" class="contact_menu_item">
+                    <a href="#contact" class="contact_menu_item menu_item">
                         <span class="main_item">
-                            x (CONTACT)
+                            <img src="/the-max/images/x4.png"
+                                    alt="x">(CONTACT)
                         </span>
                         <br>
                         <span class="desc_item"></span>
@@ -119,8 +149,15 @@
 </svg>
 
         <div class="engage_customer">
-            Join us on:
-            <!-- @TODO add facebook and twitter here -->
+            <p>Join us on:</p>
+            <p>
+                <a href="http://www.facebook.com">
+                    <img src="/the-max/images/facebook.png" alt="">
+                </a>
+                <a href="https://plus.google.com/102098580728849339715">
+                    <img src="/the-max/images/google+.png" alt="">
+                </a>
+            </p>
         </div>
     </div>
     <div class="col-md-9">
@@ -144,11 +181,11 @@
 <!-- US - who we are -->
 <div id="us" class="row part us_part">
     <div class="col-md-3">
-        <span class="part_title" style="color: #ee4023">
-            x (US)
+        <span class="part_title">
+            <img src="/the-max/images/x0.png" alt="x">(US)
         </span>
         <br>
-        <span>who we are</span>
+        <span class="part_subtitle">who we are</span>
     </div>
     <div class="col-md-9 row">
         <div class="col-md-6">
@@ -181,13 +218,13 @@
 </div>
 
 <!-- Services - what we offer -->
-<div id="services" class="row part service_part">
+<div id="services" class="row part services_part">
     <div class="col-md-3">
-        <span class="part_title" style="color: #f48245">
-            x (SERVICES)
+        <span class="part_title">
+            <img src="/the-max/images/x1.png" alt="x">(SERVICES)
         </span>
         <br>
-        what we offer
+        <span class="part_subtitle">what we offer</span>
     </div>
     <div class="col-md-9 row">
         <ul class="no-dot">
@@ -216,11 +253,11 @@
 <!-- Works - what we've done -->
 <div id="works" class="row part works_part">
     <div class="col-md-3">
-        <span class="part_title" style="color: #50b748">
-            x (WORK)
+        <span class="part_title">
+            <img src="/the-max/images/x2.png" alt="x">(WORK)
         </span>
         <br>
-        what we've done
+        <span class="part_subtitle">what we've done</span>
     </div>
     <div class="col-md-9 row">
         <ul class="no-dot">
@@ -249,8 +286,8 @@
 <!-- Clients -->
 <div id="clients" class="row part clients_part">
     <div class="col-md-3">
-        <span class="part_title" style="color: #f48245">
-            x (CLIENTS)
+        <span class="part_title">
+            <img src="/the-max/images/x3.png" alt="x">(CLIENTS)
         </span>
         <br>
     </div>
@@ -260,49 +297,49 @@
             <div class="col-md-3 img-thumbnail client_img_div">
                 <img src="/the-max/images/clients/yamaha.png"
                         alt="Yamaha Vietnam"
-                        class="img-responsive client_img" />
+                        class="img-responsive client_img yamaha_img" />
             </div>
             
         
             <div class="col-md-3 img-thumbnail client_img_div">
                 <img src="/the-max/images/clients/daf.png"
                         alt="DAF"
-                        class="img-responsive client_img" />
+                        class="img-responsive client_img daf_img" />
             </div>
             
         
             <div class="col-md-3 img-thumbnail client_img_div">
                 <img src="/the-max/images/clients/levi.png"
                         alt="Levi's"
-                        class="img-responsive client_img" />
+                        class="img-responsive client_img levi_img" />
             </div>
             
         
             <div class="col-md-3 img-thumbnail client_img_div">
                 <img src="/the-max/images/clients/piaggio.png"
                         alt="Piaggio Vietnam"
-                        class="img-responsive client_img" />
+                        class="img-responsive client_img piaggio_img" />
             </div>
             </div><div class="row">
         
             <div class="col-md-3 img-thumbnail client_img_div">
                 <img src="/the-max/images/clients/vnpt.png"
                         alt="VNPT"
-                        class="img-responsive client_img" />
+                        class="img-responsive client_img vnpt_img" />
             </div>
             
         
             <div class="col-md-3 img-thumbnail client_img_div">
                 <img src="/the-max/images/clients/abbott.png"
                         alt="Abbott"
-                        class="img-responsive client_img" />
+                        class="img-responsive client_img abbott_img" />
             </div>
             
         
             <div class="col-md-3 img-thumbnail client_img_div">
                 <img src="/the-max/images/clients/vidamo.png"
                         alt="Vidamo"
-                        class="img-responsive client_img" />
+                        class="img-responsive client_img vidamo_img" />
             </div>
             
         
@@ -326,8 +363,8 @@
 <!-- Contact -->
 <div id="contact" class="row part contact_part">
     <div class="col-md-3">
-        <span class="part_title" style="color: #00b8f1">
-            x (CONTACT)
+        <span class="part_title">
+            <img src="/the-max/images/x4.png" alt="x">(CONTACT)
         </span>
         <br>
     </div>
@@ -336,11 +373,11 @@
             <strong>Email</strong>
             <p>
                 For general enquiries please email: <br>
-                <a href="mailto:info@themax.vn">info@themax.vn</a>
+                <a href="mailto:info@themax.com.vn">info@themax.com.vn</a>
             </p>
             <p>
                 For new business enquiries please email: <br>
-                <a href="mailto:sales@themax.vn">sales@themax.vn</a>
+                <a href="mailto:sales@themax.com.vn">sales@themax.com.vn</a>
             </p>
             <strong>Call us:</strong>
             <p>Tel: +84 (8) 3845 2184 / +84 9044 15051</p>
@@ -348,12 +385,15 @@
         </div>
         <div class="col-md-3">
             <strong>Find us</strong>
-            <p>Please download PDF map.</p>
-            <p>Or find us on Google: <a href="http://goo.gl/maps/abRfR">goo.gl/maps/abRfR</a></p>
+            <!-- <p>Please download PDF map.</p> -->
+            <p>Find us on Google Maps: <a href="http://goo.gl/maps/abRfR">goo.gl/maps/abRfR</a></p>
         </div>
         <div class="col-md-4">
             <strong>Recruitement</strong>
-            <p>We are always on the look out for exceptional individuals. If you are talented, dedicated and want to work for a progressive organisation, email your CV and work to <a href="info@themax.com.vn">info@themax.com.vn</a></p>
+            <p>We are always on the look out for exceptional individuals.</p>
+            <p>
+                If you are talented, dedicated and want to work for a progressive organisation, email your CV and work to <a href="info@themax.com.vn">info@themax.com.vn</a>
+            </p>
         </div>
     </div>
 </div>
@@ -374,7 +414,7 @@
 
 
         <footer>
-    &copy;2011 by The Max.
+    &copy; 2011 by The Max.
 </footer>
 
     </div>
